@@ -1,26 +1,32 @@
-<!-- src/App.vue -->
 <template>
   <v-app>
     <v-container>
-      <FlightList />
+      <v-row>
+        <v-col>
+          <v-card>
+            <v-card-title>Flight Search</v-card-title>
+            <v-card-text>
+              <flight-search></flight-search>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>
   </v-app>
 </template>
 
 <script>
-import FlightList from './components/FlightList.vue';
+import FlightSearch from './components/FlightSearch.vue';
 
 export default {
   components: {
-    FlightList,
-  },
-};
-</script>
-
-<script setup>
-// Vue composition API setup code can go here
+    FlightSearch
+  }
+}
 </script>
 
 <style>
-/* Global styles can go here */
+body {
+  background-color: #f5f5f5;
+}
 </style>
